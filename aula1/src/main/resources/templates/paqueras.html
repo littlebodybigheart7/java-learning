@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Paqueras</title>
+    <link rel="stylesheet" th:href="@{css/paqueras.css}">
+    <script th:src="@{js/index.js}"></script>
+</head>
+<body>
+    <h1> Paqueras</h1>
+    <p> <span id="home">Castiel page</span> | <a th:href="@{/p1}">Lysandre page</a> | <a th:href="@{/p2}">Armin page</a> | <a th:href="@{/formpaquera}">Cadastrar Paquera</a> 
+    | <a th:href="@{/paqueras}">Paqueras Cadastrados </a> </p>
+    <table th:if="${not #lists.isEmpty(paqueras)}">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="p : ${paqueras}">
+                <td th:text="${p.nome}">Nome</td>
+                <td th:text="${p.idade}">Idade</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="vazio" th:if="${#lists.isEmpty(paqueras)}">Nenhuma paquera cadastrada ainda. 😢</p>
+</body>
+</html>
