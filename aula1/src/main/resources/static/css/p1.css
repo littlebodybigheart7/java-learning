@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: monospace,'Roboto Mono', 'Segoe UI';
     font-size: 18px;
@@ -34,4 +35,42 @@ a:hover{
     color: green;
     text-decoration: underline;
 
+=======
+body{
+    font-family: monospace,'Roboto Mono', 'Segoe UI';
+    font-size: 18px;
+    background-color:darkgreen;
+    margin: 100px;
+    cursor: pointer;
+
+}
+
+h1{
+    font-size: 30px;  
+    color:green ;
+    background-color: palegreen;
+    width: 50%;
+    color: darkgreen;
+}
+
+h1:hover{
+    width: 25%;
+    transition: width 2s;
+
+}
+
+img{
+    width: 200px;
+}
+
+a{
+    color: palegreen;
+    font-weight: bold;
+}
+
+a:hover{
+    color: green;
+    text-decoration: underline;
+
+>>>>>>> bddbb95f75b27207512fb390130087b6805d0677
 }

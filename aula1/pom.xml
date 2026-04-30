@@ -5,15 +5,21 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<!-- Spring Boot 4.x requer Java 17+ e ainda é muito novo; usando 3.2.x estável -->
 		<version>3.2.5</version>
 		<relativePath/>
+=======
+		<version>4.0.3</version>
+		<relativePath/> <!-- lookup parent from repository -->
+>>>>>>> bddbb95f75b27207512fb390130087b6805d0677
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>aula1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>aula1</name>
 	<description>Primeiro Projeto</description>
+<<<<<<< HEAD
 
 	<properties>
 		<java.version>17</java.version>
@@ -21,10 +27,30 @@
 
 	<dependencies>
 		<!-- Thymeleaf (template engine para as views HTML) -->
+=======
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+>>>>>>> bddbb95f75b27207512fb390130087b6805d0677
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+<<<<<<< HEAD
 
 		<!-- Spring MVC (web) -->
 		<dependency>
@@ -49,6 +75,21 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+>>>>>>> bddbb95f75b27207512fb390130087b6805d0677
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
